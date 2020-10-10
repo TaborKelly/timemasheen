@@ -19,7 +19,8 @@ Example usage from my workstation
 ./mount_dmg.sh
 ./mount_translated.sh
 cd /mnt/translated # poke around
-cp /mnt/translated/some/path /output # copy stuff out
+# copy stuff out with something like rsync -a to preserve access times, permissions, etc
+rsync -a /mnt/translated/some/path /output/some/other/path
 ```
 
 ## Further reading

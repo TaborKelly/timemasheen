@@ -10,6 +10,7 @@ RUN apt-get update && \
     parted \
     pkg-config \
     python-fuse \
+    rsync \
     vim && \
 rm -rf /var/lib/apt/lists/*
 
